@@ -1,2 +1,2 @@
 # CFG-Assignments
-New repository for CFG-assignment2
+New repository for CFG-assignment2 (python + APIs)
