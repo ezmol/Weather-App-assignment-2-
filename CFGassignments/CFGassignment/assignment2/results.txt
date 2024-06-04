@@ -1,6 +1,6 @@
-City: Kyoto
-Temperature: 17.21°C
+City: kyoto
+Temperature: 18.2°C
 Weather Description: overcast clouds
-Short Description: overcast c
-Recommendation: Maybe take a trip out of town, or join a walking tour?.
+Short Description: overcast 
+Recommendation: It's perfect weather for a hike, or maybe join a walking tour?.
 
