@@ -6,7 +6,6 @@ API_KEY = 'c7a1471cd663eef102837d1c390b379c'
 
 
 def get_weather_data(city):
-
     endpoint = 'https://api.openweathermap.org/data/2.5/weather'
     payload = {
         'q': city,
@@ -25,22 +24,15 @@ def get_weather_data(city):
 
 
 def format_weather_data(data):
-    """
-    Transform raw weather data into a meaningful format.
+    # change data into readable format
 
-    Parameters:
-    data (dict): Raw weather data.
-
-    Returns:
-    dict: Transformed weather data.
-    """
     temperature = data['main']['temp']
     weather_description = data['weather'][0]['description']
 
-    # Using string slicing to get a short description of the weather
-    short_description = weather_description[:10]
+    # Using string slicing to get a shorter description
+    short_description = weather_description[:9]
 
-    # Using built-in functions to transform weather description to uppercase
+    # Uppercase function
     weather_upper = weather_description.upper()
 
     return {
@@ -54,7 +46,7 @@ def format_weather_data(data):
 def recommend_activity(weather):
 
     # What activities are suitable for this weather?
-    # return recs based on the weather
+    # return recs based on the weather forecast
 
     if 'rain' in weather.lower():
         return "The weather isn't on your side, so it's time to find a coffee shop, or perhaps enjoy a museum day?."
